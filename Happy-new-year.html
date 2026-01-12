@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy New Year</title>
+
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(#000428, #004e92);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 3em;
+    animation: glow 2s infinite alternate;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+
+  .flowers {
+    font-size: 2.5em;
+    animation: float 3s infinite ease-in-out;
+  }
+
+  .firecrackers {
+    position: absolute;
+    font-size: 2em;
+    animation: explode 2s infinite;
+  }
+
+  @keyframes glow {
+    from { text-shadow: 0 0 10px gold; }
+    to { text-shadow: 0 0 25px orange; }
+  }
+
+  @keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+  }
+
+  @keyframes explode {
+    0% { transform: scale(0.5); opacity: 0; }
+    50% { transform: scale(1.5); opacity: 1; }
+    100% { transform: scale(2); opacity: 0; }
+  }
+</style>
+</head>
+
+<body>
+
+  <div>
+    <h1>🎉 Happy New Year 2026 🎉</h1>
+    <p>May your year bloom with happiness 🌸</p>
+
+    <div class="flowers">
+      🌸 🌼 🌺 🌸 🌼 🌺
+    </div>
+  </div>
+
+  <!-- Firecrackers -->
+  <div class="firecrackers" style="top:20%; left:20%;">🎆</div>
+  <div class="firecrackers" style="top:30%; right:25%;">🎇</div>
+  <div class="firecrackers" style="bottom:25%; left:30%;">🎆</div>
+  <div class="firecrackers" style="bottom:20%; right:20%;">🎇</div>
+
+</body>
+</html>
